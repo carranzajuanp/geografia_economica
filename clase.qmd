@@ -59,25 +59,11 @@ citation: true
 ::: {style="font-size:32px"}
 Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sectores accesibles a cada grupo de ingresos (deciles, Unidad 2!).
 
-```{r setup, include=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=4.5, fig.width=10.5}
-suppressMessages(library(terra))
-suppressMessages(library(raster))
-Decil <- rast("accesibilidad_deciles.tif")
-Decil = raster(Decil)
-library(tmap)
-library(tmaptools)
-tmap_mode('view')
-library(RColorBrewer)
-col <- rev(brewer.pal(10, "Spectral"))
-mapas <- tm_basemap(c(OSM = "OpenStreetMap.DE")) +
-  tm_shape(Decil) +
-  tm_raster(title = "Decil",
-            palette = col,
-            legend.show = TRUE,
-            n=10,
-            alpha = 0.6)
-mapas
+<center>
+```{=html}
+<iframe src="mapa.html" style="width: 70%; height: 450px; border: 0px none;"></iframe>
 ```
+</center>
 :::
 :::
 
