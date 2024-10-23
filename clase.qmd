@@ -33,8 +33,8 @@ citation: true
 ::: {data-title=""}
 ## A nivel interurbano, 2 escalas más de análisis...
 
-::: {style="font-size:26px"}
--   **Suburbanización**: movimiento de las actividades económicas desde el centro de la ciudad (o los centros) hacia la periferia urbana (dentro de los límites de un mismo mercado laboral).
+::: {style="font-size:32px"}
+
 -   **Desconcentración o descongestión**: desplazamientos de las actividades económicas que exceden el perímetro suburbano, desde un centro urbano relevante hacia localidades menor jerarquía urbana dentro de su área de influencia (teoría de los lugares centrales de Christaller, Unidad 5!)
 -   **Descentralización**: desplazamientos que rebasan el límite fijado por la desconcentración o descongestión, hacia regiones más alejadas o áreas de influencia de centros urbanos diferentes.
 
