@@ -60,6 +60,7 @@ citation: true
 Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sectores accesibles a cada grupo de ingresos (deciles, Unidad 2!).
 
 <center>
+
 ```{=html}
 <iframe src="mapa.html" style="width: 100%; height: 450px; border: 0px none;"></iframe>
 ```
@@ -74,16 +75,6 @@ Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sec
 Un 40% del espacio urbano sólo es accesible para el 10% más rico...
 
 ![](lorenz_vivienda.png){fig-align="center" width="47%"}
-:::
-:::
-
-::: {data-title=""}
-### Los nómades digitales y la pospandemia.
-
-::: {style="font-size:30px"}
-¿Una nueva forma de gentrificación **rural** originada a partir de la terciarización superior?
-
-![](nomads.png){fig-align="center" width="55%"}
 :::
 :::
 
@@ -143,28 +134,16 @@ Entrega: por el aula virtual *hasta antes del inicio de la próxima clase práct
 :::
 :::
 
+
 ::: {data-title=""}
 ### Rúbrica de evaluación
 
-::: {style="font-size:30px"}
-Logra conectar el fenómeno situado en Barrio Güemes con el instrumental analítico de la unidad 7 y con conceptos analizados en unidades anteriores (**70%**).
-:::
-
-::: {style="font-size:25px"}
--   Identifica el efecto de estos movimientos como causa y consecuencia del aumento de la renta inmobiliaria, razonando bajo la lógica del principio de competencia espacial (**30%**).
--   Identifica la presión inducida sobre los habitantes originales a trasladarse a otros espacios de la ciudad (**15%**).
--   Identifica el efecto sobre la desaparición paulatina de clústers tradicionales como restauradores de muebles, reemplazados por servicios de esparcimiento (**15%**).
--   Suma aspectos adicionales a su argumento, más allá de los detallados en la rúbrica (**10%**)
-:::
-
-::: {style="font-size:30px"}
-Logra identificar al menos **2** aspectos positivos del fenómeno (**30%**).
-:::
-
-::: {style="font-size:25px"}
--   Generación de empleos en barrios tradicionales cercanos, como Las Flores, Observatorio o Bella Vista.
--   Aumento del turismo internacional y entrada de divisas.
--   Aumento de la densidad en el uso del suelo.
--   Otros aspectos.
+::: {style="font-size:32px"}
+|                                                                                                                                         |         |
+|------------------------------------------------------|------------------|
+| **Logra conectar el fenómeno situado en Barrio Güemes con la teoría**                                                                   | **70%** |
+| (Por ejemplo: Modelo de Von Thünen, Principio de Jerarquía, Principio de competencia espacial, Suburbanización, entre otros).           |         |
+| **Logra identificar al menos 2 aspectos positivos del fenómeno**                                                                        | **30%** |
+| (Por ejemplo, la creación de nuevos empleos en gastronomía y esparcimiento, mayor densificación en la ocupación del suelo, entre otros) |         |
 :::
 :::
