@@ -24,10 +24,45 @@ citation: true
 -   Vincular estos conceptos con lo estudiado en unidades anteriores.
 :::
 
+
+::: {data-title=""}
+
+## ¿Qué entendemos por "terciarización"?
+
+::: {style="font-size:32px"}
+
+Proceso de transformación de las economías como consecuencia del crecimiento
+de la importancia de los servicios (sector terciario) en la matriz productiva. Recordemos que el sector terciario se puede descomponer en: 
+
+* Terciario tradicional (comercios y servicios personales).
+* Terciario moderno o superior (servicios de asesoría y consultoría, IT, finanzas).
+
+Se trata del proceso de transición  hacia una  economía  orientada  en  servicios y en conocimiento.
+
+:::
+:::
+
+
 ::: {data-title=""}
 ## A nivel intraurbano, recurrimos a Von Thünen...
 
-<br></br> <br></br> <br></br> <br></br> (Unidad 4!)
+<center>
+```{r}
+df <- data.frame(tipo = c("Servicios","Servicios","Industria","Industria","Agro","Agro"),
+                 renta = c(100, 0, 80, 0, 40, 0),
+                 distancia = c(0, 1, 0, 2, 0, 5))
+library(ggplot2)
+ggplot(data=df, aes(x=distancia, y=renta, group = tipo)) +
+  geom_line(aes(color = tipo)) +
+  geom_segment(aes(x=0.33,xend=0.33,y=0,yend=65),
+               colour = "black" , linewidth = 0.1, linetype = "dashed") +
+  geom_segment(aes(x=1.25,xend=1.25,y=0,yend=30),
+               colour = "black" , linewidth = 0.15, linetype = "dashed") +
+  theme_classic() +
+  scale_x_continuous(expand = c(0, 0)) + scale_y_continuous(expand = c(0, 0)) +
+    geom_text(x=3, y=80, label="Unidad 4!")
+```
+</center>
 :::
 
 ::: {data-title=""}
@@ -42,19 +77,22 @@ citation: true
 :::
 :::
 
-::: {data-title=""}
-### Todo depende del contexto..
+::: {data-title="" style="font-size:22px"}
+### Todo depende del contexto... Terciarización genuina y espuria.
+
 
 <center>
 
 ```{=html}
-<iframe src="https://ourworldindata.org/grapher/share-employment-agriculture-industry-services?country=OWID_WRL~DEU~BRA~ARG&tab=chart" loading="lazy" style="width: 70%; height: 700px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+<iframe src="https://ourworldindata.org/grapher/share-employment-agriculture-industry-services?country=OWID_WRL~DEU~BRA~ARG&tab=chart" loading="lazy" style="width: 70%; height: 650px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 ```
 </center>
 :::
 
-::: {data-title=""}
-### Distribución espacial del valor de los alquileres
+::: {data-title="" style="font-size:30px"}
+
+
+### Distribución espacial del valor de los alquileres y aglomeración de empresas de servicios en Córdoba.
 
 ::: {style="font-size:32px"}
 Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sectores accesibles a cada grupo de ingresos (deciles, Unidad 2!).
@@ -62,7 +100,7 @@ Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sec
 <center>
 
 ```{=html}
-<iframe src="mapa.html" style="width: 100%; height: 450px; border: 0px none;"></iframe>
+<iframe src="mapa.html" style="width: 100%; height: 500px; border: 0px none;"></iframe>
 ```
 </center>
 :::
@@ -126,9 +164,9 @@ Un 40% del espacio urbano sólo es accesible para el 10% más rico...
 ::: {style="font-size:32px"}
 En grupos de no más de 3 personas, elaborar un informe de 2 páginas (máximo) a partir de las siguientes consignas:
 
--   Vincular el proceso descripto en la investigación con los conceptos estudiados en la Unidad 7.
+-   **Vincular el proceso descripto en la investigación con los conceptos estudiados en la Unidad 7.**
 
--   En el texto propuesto hay una toma de posición muy marcada por parte de las y los investigadores, resaltando los efectos nocivos del proceso descripto ¿Pueden identificar algunos aspectos positivos para la Ciudad que no se estén considerando en el análisis? Desarrollar y justificar en cada caso.
+-   En el texto propuesto hay una toma de posición muy marcada por parte de las y los investigadores, resaltando los efectos nocivos del proceso descripto **¿Pueden identificar algunos aspectos positivos para la Ciudad que no se estén considerando en el análisis?** Desarrollar y justificar en cada caso.
 
 Entrega: por el aula virtual *hasta antes del inicio de la próxima clase práctica*, momento en el que haremos una puesta en común y un breve debate de no más de media hora.
 :::

@@ -352,9 +352,30 @@ Juan Pablo Carranza <a href="https://orcid.org/0000-0003-4793-1323" class="quart
 </ul>
 </div>
 </section>
+<section id="qué-entendemos-por-terciarización" class="slide level2" data-title="">
+<h2>¿Qué entendemos por “terciarización”?</h2>
+<div style="font-size:32px">
+<p>Proceso de transformación de las economías como consecuencia del crecimiento de la importancia de los servicios (sector terciario) en la matriz productiva. Recordemos que el sector terciario se puede descomponer en:</p>
+<ul>
+<li>Terciario tradicional (comercios y servicios personales).</li>
+<li>Terciario moderno o superior (servicios de asesoría y consultoría, IT, finanzas).</li>
+</ul>
+<p>Se trata del proceso de transición hacia una economía orientada en servicios y en conocimiento.</p>
+</div>
+</section>
 <section id="a-nivel-intraurbano-recurrimos-a-von-thünen" class="slide level2" data-title="">
 <h2>A nivel intraurbano, recurrimos a Von Thünen…</h2>
-<p><br><br> <br><br> <br><br> <br><br> (Unidad 4!)</p>
+<center>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="clase_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</center>
 </section>
 <section id="a-nivel-interurbano-2-escalas-más-de-análisis" class="slide level2" data-title="">
 <h2>A nivel interurbano, 2 escalas más de análisis…</h2>
@@ -366,18 +387,18 @@ Juan Pablo Carranza <a href="https://orcid.org/0000-0003-4793-1323" class="quart
 <p><strong>Se trata de límites difusos, de caracter normativo y utilidad exclusivamente conceptual, cuya extensión es sumamente dificil de definir de manera discreta y precisa en la práctica.</strong></p>
 </div>
 </section>
-<section id="todo-depende-del-contexto.." data-title="">
-<h3>Todo depende del contexto..</h3>
+<section id="todo-depende-del-contexto-terciarización-genuina-y-espuria." data-title="" style="font-size:22px">
+<h3>Todo depende del contexto… Terciarización genuina y espuria.</h3>
 <center>
-<iframe src="https://ourworldindata.org/grapher/share-employment-agriculture-industry-services?country=OWID_WRL~DEU~BRA~ARG&amp;tab=chart" loading="lazy" style="width: 70%; height: 700px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
+<iframe src="https://ourworldindata.org/grapher/share-employment-agriculture-industry-services?country=OWID_WRL~DEU~BRA~ARG&amp;tab=chart" loading="lazy" style="width: 70%; height: 650px; border: 0px none;" allow="web-share; clipboard-write"></iframe>
 </center>
 </section>
-<section id="distribución-espacial-del-valor-de-los-alquileres" data-title="">
-<h3>Distribución espacial del valor de los alquileres</h3>
+<section id="distribución-espacial-del-valor-de-los-alquileres-y-aglomeración-de-empresas-de-servicios-en-córdoba." data-title="" style="font-size:30px">
+<h3>Distribución espacial del valor de los alquileres y aglomeración de empresas de servicios en Córdoba.</h3>
 <div style="font-size:32px">
 <p>Predicción del precio de los alquileres en el Gran Córdoba, y análisis de sectores accesibles a cada grupo de ingresos (deciles, Unidad 2!).</p>
 <center>
-<iframe src="mapa.html" style="width: 100%; height: 450px; border: 0px none;"></iframe>
+<iframe src="mapa.html" style="width: 100%; height: 500px; border: 0px none;"></iframe>
 </center>
 </div>
 </section>
@@ -433,8 +454,8 @@ Juan Pablo Carranza <a href="https://orcid.org/0000-0003-4793-1323" class="quart
 <div style="font-size:32px">
 <p>En grupos de no más de 3 personas, elaborar un informe de 2 páginas (máximo) a partir de las siguientes consignas:</p>
 <ul>
-<li><p>Vincular el proceso descripto en la investigación con los conceptos estudiados en la Unidad 7.</p></li>
-<li><p>En el texto propuesto hay una toma de posición muy marcada por parte de las y los investigadores, resaltando los efectos nocivos del proceso descripto ¿Pueden identificar algunos aspectos positivos para la Ciudad que no se estén considerando en el análisis? Desarrollar y justificar en cada caso.</p></li>
+<li><p><strong>Vincular el proceso descripto en la investigación con los conceptos estudiados en la Unidad 7.</strong></p></li>
+<li><p>En el texto propuesto hay una toma de posición muy marcada por parte de las y los investigadores, resaltando los efectos nocivos del proceso descripto <strong>¿Pueden identificar algunos aspectos positivos para la Ciudad que no se estén considerando en el análisis?</strong> Desarrollar y justificar en cada caso.</p></li>
 </ul>
 <p>Entrega: por el aula virtual <em>hasta antes del inicio de la próxima clase práctica</em>, momento en el que haremos una puesta en común y un breve debate de no más de media hora.</p>
 </div>
@@ -684,6 +705,44 @@ Juan Pablo Carranza <a href="https://orcid.org/0000-0003-4793-1323" class="quart
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
